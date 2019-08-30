@@ -14,3 +14,4 @@ export const getInstance = () => {
 }
 
 export * from './getshorturl';
+export * from './getFullUrl';
