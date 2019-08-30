@@ -2,7 +2,9 @@ import express from 'express';
 import { PORT } from './constants';
 import { connectToServer, getInstance as getDBInstance } from './database';
 import { rootRouter } from './routes';
+import customenv from 'custom-env';
 var bodyParser = require('body-parser');
+customenv.env(true)
 
 
 var app = express();
