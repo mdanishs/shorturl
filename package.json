@@ -4,7 +4,7 @@
   "description": "test solution for nintex coding test",
   "main": "index.js",
   "scripts": {
-    "test": "NODE_ENV=test mocha --require @babel/register,babel-polyfill",
+    "test": "NODE_ENV=test mocha --require @babel/register,babel-polyfill ",
     "build": "rimraf dist/ && babel ./ --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files",
     "start": "nodemon --exec babel-node index.js"
   },
