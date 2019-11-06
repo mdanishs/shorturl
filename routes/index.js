@@ -71,7 +71,6 @@ rootRouter.get('/restaurants', async (req, res, next) => {
 
 rootRouter.post('/restaurant', async (req, res, next) => {
   let data = req.body.data;
-  console.log(data);
   try {
     await updatePeekabooRestaurant(data);
     res.send({
